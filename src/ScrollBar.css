@@ -1,0 +1,25 @@
+.ScrollBar {
+  padding-left: 30px;
+  transition: opacity 400ms ease-in-out;
+}
+
+.ScrollBar_invisible {
+  opacity: 0;
+}
+
+.ScrollBar_visible {
+  opacity: 1;
+}
+
+.PreventUserSelect {
+  user-select: none;
+}
+
+.ShowEventArea {
+  padding-left: 200px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
