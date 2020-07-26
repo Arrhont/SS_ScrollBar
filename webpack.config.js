@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   module: {
     rules: [
@@ -29,5 +31,11 @@ module.exports = {
   externals: {
     'react': 'react', // Case matters here 
     'react-dom' : 'reactDOM' // Case matters here 
-   }
+   },
+   output: {
+    filename: 'ss-scrollbar.js',
+    path: path.resolve(__dirname, 'dist'),
+    library: '',
+    libraryTarget: 'commonjs'
+  },
 }
